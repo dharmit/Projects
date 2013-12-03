@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 
-x = [1]
+fibonacci = [1]
 
 def fib(n):
-    global x
-    while len(x) <= n:
-        if len(x) == 1:
-            x.append(1)
+    global fibonacci
+    while len(fibonacci) <= n:
+        if len(fibonacci) == 1:
+            fibonacci.append(1)
         else:
-            x.append(x[-1] + x[-2])
+            fibonacci.append(fibonacci[-1] + fibonacci[-2])
 
 n = int(raw_input("How long Fibonacci series do you want to configure? Enter a number:"))
 fib(n)
-print x
+print fibonacci
